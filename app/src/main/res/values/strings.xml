@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RestaurantManager</string>
+    <string name="employee_manager">Employee manager</string>
+    <string name="account_manager">Account manager</string>
+    <string name="order">Order</string>
+    <string name="menu">Menu</string>
+</resources>

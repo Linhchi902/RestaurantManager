@@ -1,0 +1,45 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+def xmlFile360 = "${project.rootDir}/app/src/main/res/values-sw360dp/dimens.xml"
+def xmlFile480 = "${project.rootDir}/app/src/main/res/values-sw480dp/dimens.xml"
+def xmlFile540 = "${project.rootDir}/app/src/main/res/values-sw540dp/dimens.xml"
+def xmlFile600 = "${project.rootDir}/app/src/main/res/values-sw600dp/dimens.xml"
+def xmlFile640 = "${project.rootDir}/app/src/main/res/values-sw640dp/dimens.xml"
+def xmlFile720 = "${project.rootDir}/app/src/main/res/values-sw720dp/dimens.xml"
+def xmlFile800 = "${project.rootDir}/app/src/main/res/values-sw800dp/dimens.xml"
+// đọc file dimens.xml trong thư mục values-sw360dp rồi tìm các con số trong đó nhân với tỷ lệ tương ứng để tạo ra file dimens.xml của các kích thước màn hình khác.
+def xmlOriginal = new XmlParser().parse(xmlFile360)
+
+//Tạo dimens.xml cho các thư mục chưa có file dimens.xml
+def xml480 = xmlOriginal.clone()
+def xml540 = xmlOriginal.clone()
+def xml600 = xmlOriginal.clone()
+def xml640 = xmlOriginal.clone()
+def xml720 = xmlOriginal.clone()
+def xml800 = xmlOriginal.clone()

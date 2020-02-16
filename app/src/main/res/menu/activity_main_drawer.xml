@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_rate"
+            android:icon="@drawable/ic_employee"
+            android:title="@string/employee_manager" />
+        <item
+            android:id="@+id/nav_folder_download"
+            android:icon="@drawable/ic_account_circle"
+            android:title="@string/account_manager" />
+        <!--<item-->
+            <!--android:id="@+id/nav_suggest_ringtones"-->
+            <!--android:icon="@drawable/"-->
+            <!--android:title="@string/request_new_ringtone" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_reset_ringtone"-->
+            <!--android:icon="@drawable/icons8_reset_64"-->
+            <!--android:title="@string/reset_ringtone" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_mail_feedback"-->
+                <!--android:icon="@drawable/icons8_gmail_64"-->
+                <!--android:title="@string/studio_email" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>
