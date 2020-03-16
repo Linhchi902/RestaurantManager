@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/buffe_369"
+                    android:background="#80C5C3C3"
+                    android:layout_width="@dimen/size_200dp"
+                    android:layout_height="@dimen/size_180dp"/>
+                <TextView
+                    android:text="Lẩu 369"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/dp_25"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="369000"
+                    android:textSize="@dimen/dp_20"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:src="@drawable/buffe_179"
+                    android:background="#80C5C3C3"
+                    android:layout_width="@dimen/size_200dp"
+                    android:layout_height="@dimen/size_180dp"/>
+                <TextView
+                    android:text="Lẩu 179"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/dp_25"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:text="179000"
+                    android:textSize="@dimen/dp_20"
+                    android:layout_gravity="center"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ga_nuong"
+                android:background="#80C5C3C3"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_180dp"/>
+            <TextView
+                android:text="Gà nướng"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dp_25"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="230000"
+                android:textSize="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/bo_nuong_cay"
+                android:background="#80C5C3C3"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_180dp"/>
+            <TextView
+                android:text="Bò sốt cay"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dp_25"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="180000"
+                android:textSize="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/ba_chi_bo_my"
+                android:background="#80C5C3C3"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_180dp"/>
+            <TextView
+                android:text="Ba chỉ bò mỹ"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dp_25"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="50000"
+                android:textSize="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/suon_sot_bbq"
+                android:background="#80C5C3C3"
+                android:layout_width="@dimen/size_200dp"
+                android:layout_height="@dimen/size_180dp"/>
+            <TextView
+                android:text="Sườn sôt BBQ"
+                android:layout_gravity="center"
+                android:textSize="@dimen/dp_25"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="150000"
+                android:textSize="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/img"-->
+<!--            android:src="@drawable/suon_sot_bbq"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+<!--        <LinearLayout-->
+<!--            android:orientation="vertical"-->
+<!--            android:padding="@dimen/dp_8"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <TextView-->
+<!--                android:text="Tên:"-->
+<!--                android:textSize="@dimen/dp_20"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <EditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Sườn sôt BBQ"-->
+<!--                android:textSize="@dimen/dp_20"-->
+<!--                android:textColor="@color/colorPrimary"/>-->
+
+<!--            <TextView-->
+<!--                android:text="Giá:"-->
+<!--                android:textSize="@dimen/dp_20"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <EditText-->
+<!--                android:text="150000"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <TextView-->
+<!--                android:text="Số lượng:"-->
+<!--                android:textSize="@dimen/dp_20"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <EditText-->
+<!--                android:text="5"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <TextView-->
+<!--                android:text="Thời gian làm (phút):"-->
+<!--                android:textSize="@dimen/dp_20"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <EditText-->
+<!--                android:text="15"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--            <Button-->
+<!--                android:text="Save"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:layout_marginTop="@dimen/dp_20"-->
+<!--                android:background="@drawable/bg_btn"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+<!--        </LinearLayout>-->
+
+
+
+<!--    </LinearLayout>-->
+<!--    <ImageView-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_marginTop="@dimen/dp_30"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ic_edit"/>-->
+
+
+</LinearLayout>

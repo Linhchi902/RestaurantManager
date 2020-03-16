@@ -21,7 +21,8 @@
                 android:layout_gravity="bottom"
                 android:background="#fff"
                 app:menu="@menu/navigation" />
-            <RelativeLayout
+            <FrameLayout
+                android:id="@+id/panel"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/navigation">
@@ -33,18 +34,8 @@
                     android:layout_alignParentTop="true"
                     app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/fabSearch"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_gravity="bottom|end"
-                    android:layout_margin="16dp"
-                    android:backgroundTint="@color/colorPrimary"
-                    android:src="@drawable/ic_launcher_background"
-                    android:tint="@android:color/white" />
-            </RelativeLayout>
+
+            </FrameLayout>
 
         </RelativeLayout>
 </LinearLayout>

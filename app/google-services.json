@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "760351624089",
+    "firebase_url": "https://restaurantmanager-82a45.firebaseio.com",
+    "project_id": "restaurantmanager-82a45",
+    "storage_bucket": "restaurantmanager-82a45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:760351624089:android:1eb33898bbfe7dc5606108",
+        "android_client_info": {          "package_name": "com.foodie.restaurantmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "760351624089-dbkjghaq6084qs9due31p131a0i1rn7i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgQL8F9vyjJJNfkg1aysmbnyzOPElcYh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "760351624089-dbkjghaq6084qs9due31p131a0i1rn7i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

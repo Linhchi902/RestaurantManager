@@ -6,4 +6,6 @@
     <color name="color_view">#AAA9A9</color>
     <color name="color_text_menu_left">#646363</color>
     <color name="color_button_logout">#ffffff</color>
+    <color name="image_bg">#80969595</color>
+    <color name="text_food">#2C2C2C</color>
 </resources>

@@ -4,4 +4,17 @@
     <string name="account_manager">Account manager</string>
     <string name="order">Order</string>
     <string name="menu">Menu</string>
+    <string name="hint_user_name">User name</string>
+    <string name="hint_password">Password</string>
+    <string name="login_with_your_phone">Login with your phone</string>
+    <string name="hint_name_customer">Name</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_me">Me</string>
+    <string name="title_favorite">Favarite</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="product_home">Sản phẩm nổi bật</string>
+    <string name="btn_order">Đặt món</string>
+    <string name="text_favorite">Thích</string>
 </resources>
