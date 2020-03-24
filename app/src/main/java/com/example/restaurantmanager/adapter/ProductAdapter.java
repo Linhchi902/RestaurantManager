@@ -52,7 +52,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductH
     public void onBindViewHolder(@NonNull ProductHolder holder, int position) {
         Product mProduct = mProducts.get(position);
         holder.tvName.setText(mProduct.getPrName());
-        holder.tvPrice.setText(mProduct.getPrPrice());
+        holder.tvPrice.setText(mProduct.getPrPrice() + "");
         Glide.with(holder.imgPrd).load(mProduct.getPrImage()).into(holder.imgPrd);
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override

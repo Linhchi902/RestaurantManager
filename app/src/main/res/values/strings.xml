@@ -17,4 +17,19 @@
     <string name="product_home">Sản phẩm nổi bật</string>
     <string name="btn_order">Đặt món</string>
     <string name="text_favorite">Thích</string>
+    <string name="no_order">Bạn chưa đặt món nào tại nhà hàng</string>
+    <string name="my_order">Lịch sử gọi món</string>
+    <string name="order_today">Các món vừa gọi</string>
+    <string name="name_employee">Tên nhân viên</string>
+    <string name="id_employee">Mã nhân viên</string>
+    <string name="birth_date_employee">Ngày sinh</string>
+    <string name="sex_employee">Giới tính</string>
+    <string name="address_employee">Địa chỉ</string>
+    <string name="Phone_number_employee">Số điện thoại</string>
+    <string name="email_employee">Email</string>
+    <string name="position_employee">Chức vụ</string>
+    <string name="hour_work_employee">Ca làm việc</string>
+    <string name="name_account_employee">Tên tài khoản</string>
+    <string name="password_employee">Mật khẩu</string>
+    <string name="confirm_password_employee">Xác nhận mật khẩu</string>
 </resources>

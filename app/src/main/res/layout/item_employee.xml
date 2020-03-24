@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/dp_5" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name_employee"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/dp_20"
+        android:text="tên"
+        android:paddingLeft="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_position_employee"
+        android:textColor="@color/text"
+        android:textSize="@dimen/size_16dp"
+        android:layout_below="@+id/tv_name_employee"
+        android:text="tên"
+        android:paddingLeft="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_hour_work_employee"
+        android:textColor="@color/text"
+        android:textSize="@dimen/size_16dp"
+        android:layout_below="@+id/tv_position_employee"
+        android:text="tên"
+        android:paddingLeft="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/img_arrow_employee"
+        android:src="@drawable/ic_arow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

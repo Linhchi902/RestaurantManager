@@ -10,16 +10,16 @@ public class Product {
     private String prName;
 
     @SerializedName("prPrice")
-    private String prPrice;
+    private int prPrice;
 
     @SerializedName("prAmount")
-    private String prAmount;
+    private int prAmount;
 
     @SerializedName("prUnit")
     private String prUnit;
 
     @SerializedName("prTime")
-    private String prTime;
+    private int prTime;
 
     @SerializedName("prImage")
     private String prImage;
@@ -43,20 +43,28 @@ public class Product {
         this.prName = prName;
     }
 
-    public String getPrPrice() {
+    public int getPrPrice() {
         return prPrice;
     }
 
-    public void setPrPrice(String prPrice) {
+    public void setPrPrice(int prPrice) {
         this.prPrice = prPrice;
     }
 
-    public String getPrAmount() {
+    public int getPrAmount() {
         return prAmount;
     }
 
-    public void setPrAmount(String prAmount) {
+    public void setPrAmount(int prAmount) {
         this.prAmount = prAmount;
+    }
+
+    public int getPrTime() {
+        return prTime;
+    }
+
+    public void setPrTime(int prTime) {
+        this.prTime = prTime;
     }
 
     public String getPrUnit() {
@@ -65,14 +73,6 @@ public class Product {
 
     public void setPrUnit(String prUnit) {
         this.prUnit = prUnit;
-    }
-
-    public String getPrTime() {
-        return prTime;
-    }
-
-    public void setPrTime(String prTime) {
-        this.prTime = prTime;
     }
 
     public String getPrImage() {

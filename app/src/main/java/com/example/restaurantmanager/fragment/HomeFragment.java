@@ -61,11 +61,6 @@ public class HomeFragment extends Fragment implements ProductAdapter.ItemProduct
         adapter.setItemProductClick(this);
         rcProduct.setLayoutManager(new GridLayoutManager(getActivity().getApplicationContext(),2));
         rcProduct.setAdapter(adapter);
-    }
-
-    @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
         AppUtils.getData().getAllProduct().enqueue(new Callback<ResponeProduct>() {
             @Override
             public void onResponse(Call<ResponeProduct> call, Response<ResponeProduct> response) {
@@ -77,24 +72,32 @@ public class HomeFragment extends Fragment implements ProductAdapter.ItemProduct
 
             @Override
             public void onFailure(Call<ResponeProduct> call, Throwable t) {
-                Log.e("TAG", "onResponse: " + t.getMessage());
+                Log.e("TAG", "onFailure: " + t.getMessage());
             }
         });
     }
 
     @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+    }
+
+    @Override
     public void onItemClicked(int position) {
         Bundle b =  new Bundle();
+        Log.e("TAG", "arr: " + arr.size());
+        Log.e("TAG", "name: " + arr.get(position).getPrName());
         b.putInt(Const.PR_ID,arr.get(position).getPrID());
         b.putString(Const.PR_NAME, arr.get(position).getPrName());
-        b.putString(Const.PR_PRICE, arr.get(position).getPrPrice());
-        b.putString(Const.PR_AMOUNT, arr.get(position).getPrAmount());
-        b.putString(Const.PR_TIME, arr.get(position).getPrTime());
+        b.putInt(Const.PR_PRICE, arr.get(position).getPrPrice());
+        b.putInt(Const.PR_AMOUNT, arr.get(position).getPrAmount());
+        b.putInt(Const.PR_TIME, arr.get(position).getPrTime());
         b.putString(Const.PR_UNIT, arr.get(position).getPrUnit());
         b.putString(Const.PR_IMAGE, arr.get(position).getPrImage());
         b.putString(Const.PR_MENUID, arr.get(position).getMenuID());
-        setArguments(b);
-        Fragment fmDetail  = ((MainActivity) getActivity()).getFmDetail();
+        ProductDetailFragment fmDetail  = ((MainActivity) getActivity()).getFmDetail();
+        fmDetail.setArguments(b);
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
                 .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)
