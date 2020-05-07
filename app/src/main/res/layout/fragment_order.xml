@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
         android:padding="@dimen/dp_8"
@@ -12,7 +14,6 @@
             android:layout_height="wrap_content"
             android:text="@string/no_order"
             android:textSize="@dimen/dp_20"
-            android:visibility="gone"
             android:textColor="@color/text"
             android:layout_centerInParent="true"/>
 
@@ -21,9 +22,12 @@
             android:text="@string/order_today"
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/dp_20"
+            android:visibility="gone"
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+
 
         <LinearLayout
             android:id="@+id/ln_item_order_today"
@@ -31,7 +35,13 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rc_order"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv_order_today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
         </LinearLayout>
 
         <TextView
@@ -40,6 +50,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="@dimen/dp_20"
             android:textStyle="bold"
+            android:visibility="gone"
             android:layout_below="@+id/ln_item_order_today"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>

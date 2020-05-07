@@ -32,6 +32,9 @@ def xmlFile600 = "${project.rootDir}/app/src/main/res/values-sw600dp/dimens.xml"
 def xmlFile640 = "${project.rootDir}/app/src/main/res/values-sw640dp/dimens.xml"
 def xmlFile720 = "${project.rootDir}/app/src/main/res/values-sw720dp/dimens.xml"
 def xmlFile800 = "${project.rootDir}/app/src/main/res/values-sw800dp/dimens.xml"
+def xmlFile1024 = "${project.rootDir}/app/src/main/res/values-sw1024dp/dimens.xml"
+def xmlFile1240 = "${project.rootDir}/app/src/main/res/values-sw1240dp/dimens.xml"
+def xmlFile1480 = "${project.rootDir}/app/src/main/res/values-sw1480dp/dimens.xml"
 // đọc file dimens.xml trong thư mục values-sw360dp rồi tìm các con số trong đó nhân với tỷ lệ tương ứng để tạo ra file dimens.xml của các kích thước màn hình khác.
 def xmlOriginal = new XmlParser().parse(xmlFile360)
 
@@ -42,3 +45,169 @@ def xml600 = xmlOriginal.clone()
 def xml640 = xmlOriginal.clone()
 def xml720 = xmlOriginal.clone()
 def xml800 = xmlOriginal.clone()
+def xml1024 = xmlOriginal.clone()
+def xml1240 = xmlOriginal.clone()
+def xml1480 = xmlOriginal.clone()
+
+xml480.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((480 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((480 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((480 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml540.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((540 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((540 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((540 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml600.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((600 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((600 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((600 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml640.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((640 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((640 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((640 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml720.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((720 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((720 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((720 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml800.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((800 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((800 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((800 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml1024.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((1024 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((1024 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((1024 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml1240.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((1240 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((1240 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((1240 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+xml1480.dimen.each { dimen ->
+    def value = dimen.text();
+    if (value.contains("sp")) {
+        def newValue = value.replace("sp", "").toFloat()
+        newValue = round((1480 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "sp"
+    } else if (value.contains("px")) {
+        def newValue = value.replace("px", "").toFloat()
+        newValue = round((1480 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "px"
+    } else {
+        def newValue = value.replace("dp", "").toFloat()
+        newValue = round((1480 / 360 * newValue).toFloat(), 2);
+        dimen.value = newValue + "dp"
+    }
+}
+
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml480)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml540)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml600)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml640)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml720)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml800)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml1024)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml1240)
+new XmlNodePrinter(new PrintWriter(new FileWriter(xmlFile480))).print(xml1480)

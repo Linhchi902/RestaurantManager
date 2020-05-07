@@ -1,5 +1,6 @@
 package com.example.restaurantmanager.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -10,7 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.restaurantmanager.R;
 import com.example.restaurantmanager.Response.ResponeProduct;
 import com.example.restaurantmanager.adapter.ProductAdapter;
-import com.example.restaurantmanager.api.AppUtils;
+import com.example.restaurantmanager.api.ApiUtils;
+import com.example.restaurantmanager.utils.Const;
 
 import butterknife.BindView;
 import retrofit2.Call;
@@ -27,8 +29,10 @@ public class ProductActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
+        Intent i = getIntent();
+        int id = i.getIntExtra(Const.MENU_ID, 5);
         adapter = new ProductAdapter(this);
-        AppUtils.getData().getAllProduct().enqueue(new Callback<ResponeProduct>() {
+        ApiUtils.getData().getProductbyIdMenu(id).enqueue(new Callback<ResponeProduct>() {
             @Override
             public void onResponse(Call<ResponeProduct> call, Response<ResponeProduct> response) {
                 adapter.setmProducts(response.body().getmProducts());

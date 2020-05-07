@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/dp_25"
+    android:paddingVertical="@dimen/dp_5">
+
+    <!--    <TextView-->
+    <!--        android:text="Register"-->
+    <!--        android:textSize="30sp"-->
+    <!--        android:textColor="@color/colorPrimary"-->
+    <!--        android:textStyle="italic"-->
+    <!--        android:layout_marginBottom="@dimen/dp_30"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+    <LinearLayout
+        android:id="@+id/rt_center"
+        android:layout_above="@+id/ln_footer"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/edt_name_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edt"
+            android:hint="@string/name_account"
+            android:padding="@dimen/dp_5"
+            android:layout_marginTop="@dimen/dp_5"
+            android:textSize="@dimen/size_16dp" />
+
+        <EditText
+            android:id="@+id/edt_password_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/bg_edt"
+            android:hint="@string/password"
+            android:padding="@dimen/dp_5"
+            android:textSize="@dimen/size_16dp" />
+
+        <EditText
+            android:id="@+id/edt_grant_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/bg_edt"
+            android:hint="@string/grant"
+            android:padding="@dimen/dp_5"
+            android:textSize="@dimen/size_16dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_Save"
+                android:text="@string/add"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_btn"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_Cancel"
+                android:text="@string/cancel"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_btn"
+                android:layout_margin="@dimen/dp_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

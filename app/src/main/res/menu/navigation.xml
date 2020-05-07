@@ -8,13 +8,15 @@
         />
 
     <item
+        android:id="@+id/navigation_menu"
+        android:icon="@drawable/ic_menu_left"
+        android:title="@string/title_category" />
+
+    <item
         android:id="@+id/navigation_order"
         android:icon="@drawable/ic_order"
         android:title="@string/title_order" />
-    <item
-        android:id="@+id/navigation_favorite"
-        android:icon="@drawable/ic_favorite_border"
-        android:title="@string/title_favorite" />
+
     <item
         android:id="@+id/navigation_your_info"
         android:icon="@drawable/ic_person"

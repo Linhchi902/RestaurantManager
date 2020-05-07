@@ -7,19 +7,19 @@ public class Menu {
 
     @SerializedName("menuID")
     @Expose
-    private String menuID;
+    private int menuID;
     @SerializedName("menuName")
     @Expose
     private String menuName;
     @SerializedName("menuIDParent")
     @Expose
-    private String menuIDParent;
+    private int menuIDParent;
 
-    public String getMenuID() {
+    public int getMenuID() {
         return menuID;
     }
 
-    public void setMenuID(String menuID) {
+    public void setMenuID(int menuID) {
         this.menuID = menuID;
     }
 
@@ -31,12 +31,11 @@ public class Menu {
         this.menuName = menuName;
     }
 
-    public String getMenuIDParent() {
+    public int getMenuIDParent() {
         return menuIDParent;
     }
 
-    public void setMenuIDParent(String menuIDParent) {
+    public void setMenuIDParent(int menuIDParent) {
         this.menuIDParent = menuIDParent;
     }
-
 }

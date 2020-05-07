@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_5"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_emp_manager"
+        android:text="@string/employee_manager"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_account_manager"
+        android:text="@string/account_manager"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_product_manager"
+        android:text="@string/product_manager"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_category_manager"
+        android:text="@string/category_manager"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_bill_manager"
+        android:text="@string/bill_manager"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

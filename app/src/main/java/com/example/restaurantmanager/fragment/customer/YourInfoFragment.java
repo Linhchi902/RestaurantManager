@@ -1,4 +1,4 @@
-package com.example.restaurantmanager.fragment;
+package com.example.restaurantmanager.fragment.customer;
 
 import com.example.restaurantmanager.R;
 import com.example.restaurantmanager.base.BaseFragment;

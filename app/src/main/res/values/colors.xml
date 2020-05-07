@@ -9,4 +9,6 @@
     <color name="color_button_logout">#ffffff</color>
     <color name="image_bg">#80969595</color>
     <color name="text_food">#2C2C2C</color>
+    <color name="color_forgot_pass">#2196F3</color>
+    <color name="border_edt">#DBDBDB</color>
 </resources>

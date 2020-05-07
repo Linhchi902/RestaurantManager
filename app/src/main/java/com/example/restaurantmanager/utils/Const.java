@@ -10,4 +10,6 @@ public class Const {
     public static final String PR_IMAGE = "prImage";
     public static final String PR_MENUID = "menuID";
 
+    public static final String MENU_ID = "menuId";
+
 }

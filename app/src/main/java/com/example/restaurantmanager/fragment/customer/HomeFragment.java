@@ -1,4 +1,4 @@
-package com.example.restaurantmanager.fragment;
+package com.example.restaurantmanager.fragment.customer;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -9,23 +9,20 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.restaurantmanager.MainActivity;
+import com.example.restaurantmanager.activity.MainCusActivity;
 import com.example.restaurantmanager.R;
 import com.example.restaurantmanager.Response.ResponeProduct;
 import com.example.restaurantmanager.adapter.ProductAdapter;
-import com.example.restaurantmanager.api.AppUtils;
-import com.example.restaurantmanager.base.BaseFragment;
+import com.example.restaurantmanager.api.ApiUtils;
 import com.example.restaurantmanager.model.Product;
-import com.example.restaurantmanager.utils.Const;
+import com.example.restaurantmanager.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import butterknife.BindView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -61,7 +58,7 @@ public class HomeFragment extends Fragment implements ProductAdapter.ItemProduct
         adapter.setItemProductClick(this);
         rcProduct.setLayoutManager(new GridLayoutManager(getActivity().getApplicationContext(),2));
         rcProduct.setAdapter(adapter);
-        AppUtils.getData().getAllProduct().enqueue(new Callback<ResponeProduct>() {
+        ApiUtils.getData().getAllProduct().enqueue(new Callback<ResponeProduct>() {
             @Override
             public void onResponse(Call<ResponeProduct> call, Response<ResponeProduct> response) {
                 arr = response.body().getmProducts();
@@ -85,19 +82,11 @@ public class HomeFragment extends Fragment implements ProductAdapter.ItemProduct
 
     @Override
     public void onItemClicked(int position) {
-        Bundle b =  new Bundle();
-        Log.e("TAG", "arr: " + arr.size());
-        Log.e("TAG", "name: " + arr.get(position).getPrName());
-        b.putInt(Const.PR_ID,arr.get(position).getPrID());
-        b.putString(Const.PR_NAME, arr.get(position).getPrName());
-        b.putInt(Const.PR_PRICE, arr.get(position).getPrPrice());
-        b.putInt(Const.PR_AMOUNT, arr.get(position).getPrAmount());
-        b.putInt(Const.PR_TIME, arr.get(position).getPrTime());
-        b.putString(Const.PR_UNIT, arr.get(position).getPrUnit());
-        b.putString(Const.PR_IMAGE, arr.get(position).getPrImage());
-        b.putString(Const.PR_MENUID, arr.get(position).getMenuID());
-        ProductDetailFragment fmDetail  = ((MainActivity) getActivity()).getFmDetail();
-        fmDetail.setArguments(b);
+
+        MainCusActivity.isDetail = true;
+        MainCusActivity.temp = MainCusActivity.fragPos.Home;
+        ProductDetailFragment fmDetail  = ((MainCusActivity) getActivity()).getFmDetail();
+        Utils.putProduct(fmDetail, position, arr);
         getActivity().getSupportFragmentManager()
                 .beginTransaction()
                 .setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right)

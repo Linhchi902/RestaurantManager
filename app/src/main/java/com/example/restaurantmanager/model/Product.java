@@ -25,7 +25,18 @@ public class Product {
     private String prImage;
 
     @SerializedName("menuID")
-    private String menuID;
+    private int menuID;
+
+    public Product(int prID, String prName, int prPrice, int prAmount, String prUnit, int prTime, String prImage, int menuID) {
+        this.prID = prID;
+        this.prName = prName;
+        this.prPrice = prPrice;
+        this.prAmount = prAmount;
+        this.prUnit = prUnit;
+        this.prTime = prTime;
+        this.prImage = prImage;
+        this.menuID = menuID;
+    }
 
     public int getPrID() {
         return prID;
@@ -83,11 +94,11 @@ public class Product {
         this.prImage = prImage;
     }
 
-    public String getMenuID() {
+    public int getMenuID() {
         return menuID;
     }
 
-    public void setMenuID(String menuID) {
+    public void setMenuID(int menuID) {
         this.menuID = menuID;
     }
 }
